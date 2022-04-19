@@ -7,9 +7,8 @@ echo "Download ngrok"
 echo "===================================="
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip &>/dev/null &
-unzip ngrok-stable-linux-amd64.zip1 &>/dev/null &
-read -p "Ctrl + V Authtoken: " CRP 
-./ngrok authtoken $CRP 
+unzip ngrok-stable-linux-amd64.zip1 &>/dev/null & 
+./ngrok authtoken 24PNvWCqruQTFTe4vhivHOCg1pm_2WocyWoStfU1hfUwxPPE7 
 nohup ./ngrok tcp 3388 &>/dev/null &
 ./ngrok tcp 3388 &>/dev/null &
 echo "===================================="
